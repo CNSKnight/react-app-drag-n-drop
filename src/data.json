@@ -1,0 +1,26 @@
+[
+    {
+        "name": "filter",
+        "icon": "filter_list"
+    },
+    {
+        "name": "map",
+        "icon": "map"
+    },
+    {
+        "name": "sum",
+        "icon": "add"
+    },
+    {
+        "name": "min",
+        "icon": "vertical_align_bottom"
+    },
+    {
+        "name": "max",
+        "icon": "vertical_align_top"
+    },
+    {
+        "name": "mean",
+        "icon": "vertical_align_center"
+    }
+]

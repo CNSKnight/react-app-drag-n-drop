@@ -1,0 +1,17 @@
+.exp-target {
+    display: table-cell;
+    height: 5em;
+    width: 5em;
+    color: rgb(211, 211, 211);
+    border: 2px solid rgb(169,169,169);
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(211, 211, 211, .4);
+    border-radius: 9px;
+}
+.exp-target i {
+    color: rgb(169, 169, 169);
+    font-size: 2rem;
+    line-height: 1.3;
+}
