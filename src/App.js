@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
+import HTML5Backend from 'react-dnd-html5-backend';
+import { DragDropContext } from 'react-dnd';
 //import './App.css';
-import FuncsBar from './functions.comp';
 import ExprBloc from './expressions.comp';
+import FuncsBar from './functions.comp';
 
 import funcs from './data.json';
 /*{
@@ -14,15 +16,14 @@ import funcs from './data.json';
 }*/
 import * as _funcs from 'lodash';
 
-import {keyBy, mapValues} from 'lodash';
+//import {keyBy, mapValues} from 'lodash';
 
 import {Row, Col} from 'react-materialize';
-console.log(funcs);
 
 funcs.forEach(f => {
-  f.func = _funcs[f.name];
+  f.func = funcs[f.name];
 });
-console.log(funcs);
+
 const expsInit = {
   functions: funcs,
   sets: []
@@ -58,4 +59,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default DragDropContext(HTML5Backend)(App);
